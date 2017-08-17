@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Psalm, Life Journey</title>
+
+     <!-- Font -->
+     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+     
+     <!-- W3 css template style source -->   
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+    <!-- My own style sheet css file -->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- My own style sheet css file -->
+    <link rel="stylesheet" href="Poem_Winter.css">
+
+  </head>
+  <body>
+
+    <!-- Collect Fullscreen Overlay Start -->  
+
+          <div id="fullNav" class="overlay" style="cursor:pointer;z-index:50">
+              <div>
+                <a href="javascript:void(0)" class="w3-closenav w3-large w3-transparent w3-right w3-padding-24 w3-padding-right" onclick="callapseNav()">Close &times;</a>
+              </div>
+
+              <div class="bgimg w3-text-black">
+                <div class="w3-display-middle">
+
+                  <div id="collectContentDiv" class="overlay-content w3-center w3-row">
+                    <div class="w3-center">                       
+                        <div class="w3-col m1"><p> </p></div>      
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox1" class="w3-col m1 w3-hover-border-white"><p class="one" onclick="callPoem(0)">Poem 01</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox2" class="w3-col m1 w3-hover-border-white"><p class="two" onclick="callPoem(1)">Poem 02</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox3" class="w3-col m1 w3-hover-border-white"><p class="three" onclick="callPoem(2)">Poem 03</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox4" class="w3-col m1 w3-hover-border-white"><p class="four" onclick="callPoem(3)">Poem 04</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>  
+
+          </div>           
+    <!-- Collect Fullscreen Overlay End --> 
+
+<!-- Boostrap First Row Menu Start-->
+<div class="bgimg overlay w3-display-container w3-text-black" id="home_contents">
+    <div class="w3-jumbo">   
+        <div id="row01" class="w3-row">   
+        <!-- Season Title -->
+          <div class="w3-col m1 w3-left" id="titleWinterDiv">
+            <p id="titleWinter"><img id="logoPoemImg" src="Image/Font_Fall03.png" height="49.46px" width="132.43px"></p>
+          </div>
+
+        <!-- Psalm Logo -->
+          <div class=" w3-col m10 w3-center" id="logoPoemDiv">
+            <p> 
+              <a href="index.html" onclick="window.location ='index.html';return false;" id="logoPoemLink" >
+                  <img id="logoPoem" src="Image/P01_a.png" height="76.68px" width="138.6px">
+              </a>
+            </p>
+          </div>
+
+        <!-- Poem Button -->          
+          <div class="w3-col m1 w3-center" id="poemBtnDiv">
+            <p id="poemBtn">
+                 <a href="#" style="cursor:pointer" onclick="createNav()" id="poemBtnImg_a">
+                    <img id="poemBtnImg" src="Image/Button_Collect.png" height="34px" width="41px">
+                 </a> 
+            </p>
+          </div>
+        </div> <!-- End of row01 -->  
+
+        <div id="row02" class="w3-row"> 
+
+         <table class="w3-table w3-centered">
+           <tr class="w3-row" id="row02Tr">
+             <!-- Left Bar --> 
+             <th id="leftBarTh"> </th>
+             <!-- Poem Container -->
+             <th id="poemContainerTh" style="position:relative;">
+                <div id="id11" style="position:absolute; z-index:11;">
+                   <img class="poemContainerImg" src="Image/picFall00.png" height="610px" width="1149px" style="z-index:1;"> 
+                </div>  
+                <div id="id10" style="position:absolute; z-index:10;">
+                   <img class="poemContainerImg" src="Image/picFall01.png" height="610px" width="1149px" style="z-index:1;"> 
+                </div>                              
+                <div id="id02" style="position:absolute; z-index:9;">
+                   <img class="poemContainerImg" src="Image/picFall02.png" height="610px" width="1149px" style="z-index:1;"> 
+                </div>               
+                <div id="id03" style="position:absolute; z-index:8;">
+                   <img class="poemContainerImg" src="Image/picFall03.png" height="610px" width="1149px" style="z-index:1;"> 
+                </div>               
+                <div id="id04" style="position:absolute; z-index:7;">
+                   <img class="poemContainerImg" src="Image/picFall04.png" height="610px" width="1149px" style="z-index:1;"> 
+                </div>  
+                <div id="id01"> 
+                    <img class="poemContainerImg" src="Image/Rim.png" height="610px" width="1149px">                 
+                </div>
+             </th>
+             <!-- Right Bar -->
+             <th class="w3-center c1" id="rightBarTh"> 
+                <div id="imgDiv">
+                  <a href="#"><img class="circleImg" id="circleImg01" src="Image/Button_Circle01.png"></a>
+                  <a href="#"><img class="circleImg" id="circleImg02" src="Image/Button_Circle02.png"></a>
+                  <a href="#"><img class="circleImg" id="circleImg03" src="Image/Button_Circle03.png"></a> 
+                  <a href="#"><img class="circleImg" id="circleImg04" src="Image/Button_Circle04.png"></a> 
+                </div>
+             </th>
+
+           </tr> 
+         </table>        
+
+        </div> <!-- End of row02 -->  
+
+    </div>
+</div>        
+<!-- Boostrap First Row Menu End--> 
+
+
+
+    <!-- HandleBars.js Script Source -->
+    <script type="text/javascript" src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"></script>
+
+    <!-- Wheelnav Script Source -->
+
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/raphael.min.js"></script> 
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/wheelnav.min.js"></script> 
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/wheelnav.js"></script> 
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/raphael.icons.min.js"></script> 
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/wheelnav.marker.js"></script> 
+
+    <!-- JQuery Script Source -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+
+    <!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My JavaScript -->
+	<script src = "Poem_Winter.js"></script>
+
+  </body>
+
+</html>

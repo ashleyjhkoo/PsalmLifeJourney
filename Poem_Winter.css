@@ -1,0 +1,181 @@
+/* Body color setup Start */
+	body {
+		background-color: #f8f9ed;
+		overflow:hidden; 
+        height: 100%;
+		margin:0;
+}
+/* Body color setup End */
+
+/* Menu CSS setup start */
+#logoPoemDiv {
+
+}
+
+
+.poemContainerImg {
+    width: 100%;
+    height: auto;
+
+}
+
+#poemContainerDiv {
+	    display: flex;
+}
+
+#leftBarDiv {
+	flex: 1;
+}
+
+#leftBarImg {
+    width: 100%;
+    height: auto;
+}
+
+#leftBarTh {
+    width: 9%;
+    border-left: 19px solid #7c66ae;
+} 
+#poemContainerTh {
+    width: 81%;
+    height: 80%;
+    padding: 0;
+}
+#rightBarTh {
+    width: 10%;
+    vertical-align: middle;
+    padding-left: 45px;
+    padding-bottom: 15px;
+}
+.tr, .th {
+    vertical-align: middle;
+}
+
+.circleImg {
+	display: none;
+}
+
+#imgDiv {
+    display: none;
+}
+
+.poemContainerImg {
+    margin-bottom: 0;
+}
+
+#row03 {
+	display: none;
+}
+
+/* Fullscreen overlay scrren Set up Start */
+        #fullNav {
+            opacity: 0.98;
+            background: #7c66ae;
+            width: 0;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #c8ea9c;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .overlay a {font-size: 20px}
+          .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+          }
+        }
+
+/* Fullscreen overlay scrren Set up End */
+
+        .w3-border {
+            border-width:1px; 
+            border-color: #c8ea9c; 
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        p:hover, p:focus {
+            border-color: #f1f1f1; 
+            text-align: center;
+            border-width:2px;
+            color: #f1f1f1;         
+        }
+        #collectContentDiv {
+            text-align: center;
+        }
+
+        p.one, p.two, p.three, p.four {
+            border-color: #c8ea9c; 
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            border: 2px solid #c8ea9c;
+            width: 200px;
+            height: 70px;
+
+        }
+
+
+
+    .id0 {
+        position: absolute; left: 0px; top: 0px;
+        z-index: 1;
+    }
+    .id1 {
+        position: absolute; left: 0px; top: 0px;
+        z-index: 2;
+    }
+    .id2 {
+        position: relative; left: 0px; top: 0px;
+        z-index: 3;
+    }
+    .id3 {
+        position: absolute; left: 0px; top: 0px;
+    }
+    #id3_winter{
+    }
+    #id4 {
+       position: relative;  left: 0px; top: 0px;
+       z-index: 9;
+    }
+
+    #home_contents {
+        z-index: 11;
+    }

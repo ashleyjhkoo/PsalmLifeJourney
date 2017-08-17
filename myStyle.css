@@ -1,0 +1,362 @@
+/*  Loading Animation Hide for pre-stuffs Start */
+#id4, #logoImg, #aboutImg, #socialImg, #collectImg, #rightBarTh {
+	display: none;
+}
+/*  Loading Animation Hide for pre-stuffs End */
+
+/*  Full page border Start */
+    #top, #bottom, #left, #right {
+	background: #c8ea9c;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 20px;
+	}
+	#left { left: 0; }
+	#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 20px;
+	}
+	#top { top: 0; }
+	#bottom { bottom: 0; }
+/*  Full page border End */
+
+    #id01 a, #id01, #id01 p
+    { z-index: 500;
+      color: #c8ea9c;
+    }
+    #id01 a:hover, #id01 p:hover 
+    { 
+      z-index: 500;
+      color: #f1f1f1;
+    }
+    #id01 {
+    	opacity: 0.9;
+    }
+    #id01 h2 {
+    	text-align: center;
+    	font-size: 16px;
+    	color: #f1f1f1;
+    	padding-top: 7px
+    }
+
+
+/* content relative fixed ratio centering styles Start */
+   .fullscreenDiv {
+/*    background-color: #e8e8e8;*/
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: relative;
+    /*    position: absolute;*/
+    }
+
+	.content-a {
+		display:table;
+	}
+	.content-b {
+		display:table-cell;
+	    position:relative;
+		vertical-align:middle;
+		text-align:center;
+	}
+/* content relative fixed ratio centering styles End */
+
+/* Image Overlay Setup Start */
+	.w3-display-container .w3-display-middle{
+/*	     background-color: grey;*/
+	}
+
+	.w3-display-container .w3-display-middle * {
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+	.w3-display-container img{
+	/*    position:absolute;*/
+	}
+
+
+	.id0 {
+		position: absolute; left: 0px; top: 0px;
+	    z-index: 1;
+	}
+	.id1 {
+		position: absolute; left: 0px; top: 0px;
+	    z-index: 2;
+	}
+	.id2 {
+		position: relative; left: 0px; top: 0px;
+	    z-index: 3;
+	}
+	.id3 {
+		position: absolute; left: 160px; top: 130px;
+		display: none;
+	}
+	#id3_winter, #id3_spring, #id3_summer, #id3_fall{
+        display: none;
+	}
+	#id4 {
+	   position: absolute; 	left: 300px; top: 410px;
+	   z-index: 9;
+	}
+	#id5 {
+	   position: relative; 	left: 0px; top: 0px;
+	}
+
+	#home_menu {
+		z-index: 10;
+
+        margin-top: 10px;
+
+	}
+	.w3-display-right, .w3-display-left, .w3-display-top, .w3-display-topright, .w3-display-topleft{
+		margin: 14px;
+	}
+	.w3-display-topmiddle{
+		margin: 14px;
+		margin-left: 0px;
+	}
+	#home_contents {
+        z-index: 11;
+	}
+/* Image Overlay Setup End */
+
+/* Body color setup Start */
+	body {
+		background-color: #f8f9ed;
+}
+/* Body color setup End */
+
+/* W3 css template Start */
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+/*	z-index: 25;*/
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+/* W3 css template End */
+
+/* WeelNav.js style set up Start */
+	#divWheel {
+		width: 512px;
+		height: 512px;
+	}
+
+	#divWheelSmall {
+		width: 300px;
+		height: 300px;
+	}
+/* WeelNav.js style set up End */
+
+/* Loading Animation Start */
+		#psalmLoader {
+		    -moz-animation: cssAnimation 0s ease-in 2s forwards;
+		    /* Firefox */
+		    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+		    /* Safari and Chrome */
+		    -o-animation: cssAnimation 0s ease-in 2s forwards;
+		    /* Opera */
+		    animation: cssAnimation 0s ease-in 2s forwards;
+		    -webkit-animation-fill-mode: forwards;
+		    animation-fill-mode: forwards;
+		}
+
+		.loader {
+		  width: 150px;
+		  height: 150px;
+		  line-height: 150px;
+		  margin: 100px auto;
+		  position: relative;
+		  box-sizing:  border-box;
+		  color: #7d60a9;
+		  text-align: center;
+		  font-size: 11px;
+		  z-index: 0;
+		  text-transform: uppercase;
+		}
+
+		.loader:before,
+		.loader:after {
+		  opacity: 0;
+		  box-sizing: border-box;
+		  content: "\0020";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  border-radius: 100px;
+		  border: 5px solid #c8ea9c;
+		  box-shadow: 0 0 50px #c8ea9c, inset 0 0 50px #c8ea9c;
+		}
+
+		.loader:after {
+		  z-index: 1;
+		  -webkit-animation: gogoloader 2s infinite 1s;
+		}
+
+		.loader:before {
+		  z-index: 2;
+		  -webkit-animation: gogoloader 2s infinite ;
+		}
+
+		@-webkit-keyframes gogoloader {
+		  0% {
+		    -webkit-transform: scale(0);
+		    opacity: 0;
+		  }
+		  50% {
+		    opacity: 1;
+		  }
+		  100% {
+		    -webkit-transform: scale(1);
+		    opacity: 0;
+		  }
+		}
+/* Loading Animation End */
+
+
+/* Center Alignment of loading animation start */
+		#loaderDiv {
+		  color: #c8ea9c;
+		  height: 300px;
+		  width: 300px;
+		  transform: translate(-50%, -50%);
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  overflow: auto;
+		}
+/* Center Alignment of loading animation end */
+
+/* Top Menu Set up Start */
+        #aboutImg {
+        	opacity: 0.6;
+        }
+        .circleImg {
+        	display: none;
+        }
+/* Top Menu Set up End */
+
+/* Sidenav Half scrren Set up Start */
+        #mySidenav {
+            opacity: 0.9;
+            overflow: hidden;
+            overflow-y: hidden;
+        	overflow-x: hidden;
+        	overflow: -moz-scrollbars-vertical;
+        }
+        #spanDiv, #spanContents {
+        	overflow-y: hidden;
+        	overflow-x: hidden;
+        	overflow: -moz-scrollbars-vertical;
+        }
+/* Sidenav Half scrren Set up End */
+
+/* Fullscreen overlay scrren Set up Start */
+        #myNav {
+        	opacity: 0.98;
+        	background: #7c66ae
+        }
+
+		.overlay {
+		    height: 100%;
+		    width: 0;
+		    position: fixed;
+		    z-index: 1;
+		    top: 0;
+		    right: 0;
+		    background-color: rgb(0,0,0);
+		    background-color: rgba(0,0,0, 0.9);
+		    overflow-x: hidden;
+		    transition: 0.5s;
+		}
+        .w3-sidenav a {
+		    color: #c8ea9c;
+        }
+        .w3-sidenav a:hover, .w3-sidenav a:focus {
+		    color: #f1f1f1;
+		}
+
+		.overlay-content {
+		    position: relative;
+		    top: 25%;
+		    width: 100%;
+		    text-align: center;
+		    margin-top: 30px;
+		}
+
+		.overlay a {
+		    padding: 8px;
+		    text-decoration: none;
+		    font-size: 36px;
+		    color: #c8ea9c;
+		    display: block;
+		    transition: 0.3s;
+		}
+
+		.overlay a:hover, .overlay a:focus {
+		    color: #f1f1f1;
+		}
+
+		.overlay .closebtn {
+		    position: absolute;
+		    top: 20px;
+		    right: 45px;
+		    font-size: 60px;
+		}
+
+		@media screen and (max-height: 450px) {
+		  .overlay a {font-size: 20px}
+		  .overlay .closebtn {
+		    font-size: 40px;
+		    top: 15px;
+		    right: 35px;
+		  }
+		}
+/* Fullscreen overlay scrren Set up End */
+
+		.w3-border {
+		    border-width:1px; 
+		    border-color: #c8ea9c; 
+/*		    border-style:dashed;*/
+		    text-align: center;
+		    display: table-cell;
+            vertical-align: middle;
+		}
+        p:hover, p:focus {
+		    border-color: #f1f1f1; 
+		    border-width:2px;
+		    color: #f1f1f1;      	
+        }
+        #collectContentDiv {
+            text-align: center;
+        }
+        .w3-col {
+        }
+
+        p.one, p.two, p.three, p.four {
+		    border-color: #c8ea9c; 
+		    text-align: center;
+		    display: table-cell;
+            vertical-align: middle;
+		    border: 2px solid #c8ea9c;
+		    width: 200px;
+		    height: 70px;
+
+        }
+
+/* FB api set up */
+        #shareImg {
+        	display: none;
+        }
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Psalm, Life Journey</title>
+
+     <!-- Font -->
+     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+     
+     <!-- W3 css template style source -->   
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+    <!-- My own style sheet css file -->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- My own style sheet css file -->
+    <link rel="stylesheet" href="myStyle.css">
+
+  </head>
+  <body>
+
+   <!-- full page background image Starat-->
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+   <!-- full page background image End--> 
+
+    <!-- Loading animation start -->
+    <div id="loaderDiv" class="fullscreenDiv content-a">
+        <div id="psalmLoader" class="loader content-b"> <img src="Image/P01_a.png" alt="" height="72" width="128"> </div>
+    </div>
+    <!-- Loading animation end -->
+
+    <!-- About Sidenav Start -->
+          <nav class="w3-sidenav w3-grey w3-animate-left" style="display:none;z-index:20" id="mySidenav">
+            <a href="javascript:void(0)" onclick="w3_close()" 
+            class="w3-closenav w3-large w3-transparent w3-right w3-padding-24 w3-padding-right">Close &times;</a>
+            <img class="w3-display-topmiddle w3-padding-top" id="logoWhiteImg" src="Image/logoWhite.png" height="70px" width="132.3px">
+            <div class="w3-center" style="color:white; font-family:Comic Sans MS"> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Psalm|Life Journey is a visual poem site 
+            <br>
+            that displays 4 poems of King David 
+            <br>
+            in his 4 different life seasons. 
+            </div>
+          </nav>
+
+          <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;z-index:19" id="myOverlay"></div>
+          <div class="w3-container w3-padding-bottom w3-padding-right" id="spanDiv">
+            <br>
+            <br>
+            <span class="w3-opennav w3-xxlarge" onclick="w3_open()" id="spanContents"></span>
+          </div> 
+    <!-- About Sidenav End --> 
+
+    <!-- Collect Fullscreen Overlay Start -->  
+
+          <div id="myNav" class="overlay w3-animate-right" style="cursor:pointer;z-index:30">
+            <div>
+              <a href="javascript:void(0)" class="w3-closenav w3-large w3-transparent w3-right w3-padding-24 w3-padding-right" onclick="closeNav()">Close &times;</a>
+            </div>
+
+              <div class="bgimg w3-text-black">
+                <div class="w3-display-middle">
+
+                  <div id="collectContentDiv" class="overlay-content w3-center w3-row">
+                    <div class="w3-center">                       
+                        <div class="w3-col m1"><p> </p></div>      
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox1" class="w3-col m1 w3-hover-border-white"><p class="one" onclick="callPoem(0)">Poem 01</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox2" class="w3-col m1 w3-hover-border-white"><p class="two" onclick="callPoem(1)">Poem 02</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox3" class="w3-col m1 w3-hover-border-white"><p class="three" onclick="callPoem(2)">Poem 03</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div id="poemBox4" class="w3-col m1 w3-hover-border-white"><p class="four" onclick="callPoem(3)">Poem 04</p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                        <div class="w3-col m1"><p> </p></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>  
+
+          </div>           
+    <!-- Collect Fullscreen Overlay End --> 
+
+    <!-- Facebook share modal start -->
+          <div id="id01" class="w3-modal" style="display:none;z-index:100">
+            <div class="w3-modal-content w3-animate-top w3-card-8 w3-grey w3-animate-opacity">
+            <a href="javascript:void(0)" onclick="w3_close()" 
+            class="w3-closenav w3-transparent w3-right w3-padding-24 w3-padding-right">Close &times;</a>
+              <h2> Facebook Share! </h2>
+              <div class="w3-container">
+                <p> Facebook Login<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div></p>
+                <br><br>
+                <p> Facebook Share<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+                </p>
+                <br><br>
+                <p> Facebook Like<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></p>
+              </div>
+            </div>
+          </div> 
+    <!-- Facebook share modal end -->          
+
+    <!-- homescreen menu start -->
+    <div class="w3-overlay w3-show w3-transparent w3-display-container w3-text-pink" id="home_menu" style="height:100%;">
+          <div class="w3-display-topleft w3-container">
+              <a href="#" onclick="w3_open()" id="aboutImg_a">
+                  <img id="aboutImg" src="Image/Button_About.png" height="32px" width="103px">
+              </a>
+          </div>
+
+          <div class="w3-display-topright w3-container">
+              <a href="#" onclick="document.getElementById('id01').style.display='block'" style="cursor:pointer" id="fbShare_a">
+                 <img id="shareImg" src="Image/fbShare.png" height="10.7px" width="29.2px">
+              </a> 
+              <a href="#" style="cursor:pointer" onclick="showFB()" id="socialImg_a">
+                 <img id="socialImg" src="Image/Button_Social.png" height="32px" width="32px">
+              </a>   
+              <a href="#" style="cursor:pointer" onclick="openNav()" id="collectImg_a">
+                 <img id="collectImg" src="Image/Button_Collect.png" height="34px" width="41px">
+              </a> 
+
+ 
+
+          </div>
+          <div class="w3-display-right w3-container">
+             <table class="w3-table w3-centered">
+                 <th class="w3-center c1" id="rightBarTh"> 
+                    <div id="circleDiv">
+                      <a href="#"><img class="circleImg" id="slideImg01" src="Image/Button_Circle01.png"></a>
+                      <a href="#"><img class="circleImg" id="slideImg02" src="Image/Button_Circle02.png"></a>
+                      <a href="#"><img class="circleImg" id="slideImg03" src="Image/Button_Circle03.png"></a> 
+                      <a href="#"><img class="circleImg" id="slideImg04" src="Image/Button_Circle04.png"></a> 
+                    </div>
+                 </th>
+               </tr> 
+             </table> 
+          </div>
+          <div class="w3-display-topmiddle w3-padding-top"><img id="logoImg" src="Image/P01_a.png" height="70px" width="132.3px"></div>
+    </div> 
+    <!-- homescreen menu start -->  
+
+   <!-- main screen wheel start --> 
+    <div class="bgimg w3-display-container w3-text-black" id="home_contents">
+        <div class="w3-display-middle w3-jumbo w3-padding-jumbo">
+           <p id="id5">
+                <!-- WheelNav.js Start -->  
+                  <div id="divWheel" data-wheelnav 
+                data-wheelnav-marker 
+                data-wheelnav-markerpath="PieLineMarker" class="w3-center w3-hide-small">
+                </div>
+
+                <div id="divWheelSmall" data-wheelnav 
+                data-wheelnav-marker 
+                data-wheelnav-markerpath="PieLineMarker" class="w3-center w3-hide-medium w3-hide-large">
+                </div>
+           </p>
+           <p id="id4"> 
+              <a href="#" onclick="callPoem(countSeason)" id="rightBtnLink" >
+                 <img src="Image/Button_Right.png" height="32" width="33"> 
+              </a>   
+           </p>
+           <div class="id3" id="id3_winter">         
+             <img class="id2" id="id2_winter" src="Image/Winter_Layer01.png" style="z-index:1;" height="328.8" width="317.6">
+             <img class="id1" id="id1_winter" src="Image/Winter_Layer02.png" style="z-index:0;" height="328.8" width="317.6">
+             <img class="id0" id="id0_winter" src="Image/Winter_Layer03.png" style="z-index:-1;" height="328.8" width="317.6">
+           </div>
+           <div class="id3" id="id3_spring">         
+             <img class="id2" id="id2_spring" src="Image/Spring_Layer01.png" style="z-index:1;" height="328.8" width="317.6">
+             <img class="id1" id="id1_spring" src="Image/Spring_Layer02.png" style="z-index:0;" height="328.8" width="317.6">
+             <img class="id0" id="id0_spring" src="Image/Spring_Layer03.png" style="z-index:-1;" height="328.8" width="317.6">
+           </div>
+           <div class="id3" id="id3_summer">         
+             <img class="id2" id="id2_summer" src="Image/Summer_Layer01.png" style="z-index:1;" height="328.8" width="317.6">
+             <img class="id1" id="id1_summer" src="Image/Summer_Layer02.png" style="z-index:0;" height="328.8" width="317.6">
+             <img class="id0" id="id0_summer" src="Image/Summer_Layer03.png" style="z-index:-1;" height="328.8" width="317.6">
+           </div>
+           <div class="id3" id="id3_fall">         
+             <img class="id2" id="id2_fall" src="Image/Fall_Layer01.png" style="z-index:1;" height="328.8" width="317.6">
+             <img class="id1" id="id1_fall" src="Image/Fall_Layer02.png" style="z-index:0;" height="328.8" width="317.6">
+             <img class="id0" id="id0_fall" src="Image/Fall_Layer03.png" style="z-index:-1;" height="328.8" width="317.6">
+           </div>
+
+        </div>
+    </div>
+   <!-- main screen wheel end --> 
+
+   <!-- Load poem html page start -->
+       <div class="poemPage" id="poemSpring">
+       </div>
+       <div class="poemPage" id="poemSummer">
+       </div>
+       <div class="poemPage" id="poemWinter">
+       </div>
+       <div class="poemPage" id="poemFall">
+       </div>
+   <!-- Load poem html page start -->
+
+
+
+    <!-- HandleBars.js Script Source -->
+    <script type="text/javascript" src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"></script>
+    <!-- TweenMax.js Script Source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+    <!-- Wheelnav Script Source -->
+
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/raphael.min.js"></script> 
+<!--     // <script type="text/javascript" src="./wheelnav.js-1.7.0/wheelnav.min.js"></script>  -->
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/wheelnav.js"></script> 
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/raphael.icons.min.js"></script> 
+    <script type="text/javascript" src="./wheelnav.js-1.7.0/wheelnav.marker.js"></script> 
+
+    <!-- JQuery Script Source -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+
+    <!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My JavaScript -->
+	<script src = "myScript.js"></script>
+
+  </body>
+
+</html>
